@@ -10,14 +10,14 @@ endif
 endif
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/yodita/sepolicy/qcom/private
+    device/titanium/sepolicy/qcom/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/yodita/sepolicy/qcom/dynamic \
-    device/yodita/sepolicy/qcom/system
+    device/titanium/sepolicy/qcom/dynamic \
+    device/titanium/sepolicy/qcom/system
 else
 BOARD_SEPOLICY_DIRS += \
-    device/yodita/sepolicy/qcom/dynamic \
-    device/yodita/sepolicy/qcom/vendor
+    device/titanium/sepolicy/qcom/dynamic \
+    device/titanium/sepolicy/qcom/vendor
 endif
