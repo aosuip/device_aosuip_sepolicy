@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all products that
-# inherit from Lineage
+# inherit from titanium
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -32,4 +32,4 @@ BOARD_SEPOLICY_DIRS += \
 endif
 
 # Selectively include legacy rules defined by the products
--include device/lineage/sepolicy/legacy-common/sepolicy.mk
+-include device/titanium/sepolicy/legacy-common/sepolicy.mk
