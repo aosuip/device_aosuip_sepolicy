@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all exynos products
-# that inherit from titanium
+# that inherit from aosuip
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -10,14 +10,14 @@ endif
 endif
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/titanium/sepolicy/exynos/private
+    device/aosuip/sepolicy/exynos/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/titanium/sepolicy/exynos/dynamic \
-    device/titanium/sepolicy/exynos/system
+    device/aosuip/sepolicy/exynos/dynamic \
+    device/aosuip/sepolicy/exynos/system
 else
 BOARD_SEPOLICY_DIRS += \
-    device/titanium/sepolicy/exynos/dynamic \
-    device/titanium/sepolicy/exynos/vendor
+    device/aosuip/sepolicy/exynos/dynamic \
+    device/aosuip/sepolicy/exynos/vendor
 endif

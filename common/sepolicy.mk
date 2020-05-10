@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all products that
-# inherit from titanium
+# inherit from aosuip
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -16,20 +16,20 @@ endif
 endif
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/titanium/sepolicy/common/public
+    device/aosuip/sepolicy/common/public
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/titanium/sepolicy/common/private
+    device/aosuip/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/titanium/sepolicy/common/dynamic \
-    device/titanium/sepolicy/common/system
+    device/aosuip/sepolicy/common/dynamic \
+    device/aosuip/sepolicy/common/system
 else
 BOARD_SEPOLICY_DIRS += \
-    device/titanium/sepolicy/common/dynamic \
-    device/titanium/sepolicy/common/vendor
+    device/aosuip/sepolicy/common/dynamic \
+    device/aosuip/sepolicy/common/vendor
 endif
 
 # Selectively include legacy rules defined by the products
--include device/titanium/sepolicy/legacy-common/sepolicy.mk
+-include device/aosuip/sepolicy/legacy-common/sepolicy.mk
